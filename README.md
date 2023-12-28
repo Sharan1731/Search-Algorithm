@@ -94,6 +94,7 @@ if result==-1:
     print("Element not found")
 else:
     print("Element found at index: ",result)
+```
     
 ## Sample Input and Output
 ![image](https://github.com/Sharan1731/Search-Algorithm/assets/144980172/f478caa0-dbc9-49e5-964a-e51cccba2784)
