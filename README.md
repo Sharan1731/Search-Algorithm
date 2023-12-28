@@ -18,28 +18,91 @@ To write a program to perform linear search and binary search using python progr
 6.	Repeat steps 2 to 5 until low meets high
 ## Program:
 i)	#Use a linear search method to match the item in a list.
-```
+
+Program for linear search method to match the item in a list
+Developed by:Sharan.G
+RegisterNumber: 23002031
+'''
+def linearSearch(array,n,k):
+    for i in range(n):
+        if array[i]==k:
+            return i
+    return -1 
+array = eval(input())
+array.sort()
+k = eval(input())
+n=len(array)
+print(array)
+result = linearSearch(array,n,k)
+if result==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",result)
 
 
 
-```
+
+
 ii)	# Find the element in a list using Binary Search(Iterative Method).
-```
+Program to find the element in a list using Binary Search(Iterative Method)..
+Developed by:
+RegisterNumber: 
+'''
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input())
+print(array)
+result=binarySearchIter(array,k,0,len(array)-1)
+if result==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",result)
 
 
 
-
-
-```
 iii)	# Find the element in a list using Binary Search (recursive Method).
-```
-
-
-
-
-
-```
+''' 
+Program to find the element in a list using Binary Search (recursive Method).
+Developed by:SHARAN.G
+RegisterNumber: 212223230203
+def binarySearchIter(array, k, low,high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input())
+print(array)
+result=binarySearchIter(array,k,0,len(array)-1)
+if result==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",result)
+    
 ## Sample Input and Output
+![image](https://github.com/Sharan1731/Search-Algorithm/assets/144980172/f478caa0-dbc9-49e5-964a-e51cccba2784)
+
+![image](https://github.com/Sharan1731/Search-Algorithm/assets/144980172/aed8b2b0-f203-4a31-82cf-41fb211d778e)
+
+![image](https://github.com/Sharan1731/Search-Algorithm/assets/144980172/2ba74773-5d63-4cc5-8116-c0d83251c1c2)
+
+
 
 
 
